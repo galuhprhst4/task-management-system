@@ -48,15 +48,6 @@ function initializeApp() {
     app.taskView = new TaskView(app.taskController, app.userController);
     console.log("✅ Views initialized");
 
-    // load content 
-    window.UserController = app.userController;
-    window.TaskController = app.taskController;
-    window.UserRepository = app.userRepository;
-    window.TaskRepository = app.taskRepository;
-    window.TaskView = app.taskView;
-    window.EnhancedStorageManager = app.storage;
-    console.log("App Loaded");
-
     // Setup authentication event listeners
     setupAuthEventListeners();
 

@@ -1,3 +1,10 @@
+if (typeof require !== 'undefined' && typeof module !== 'undefined') {
+    // Hanya import jika kita benar-benar di Node.js environment
+    if (typeof EnhancedTask === 'undefined') {
+        EnhancedTask = require('../models/EnhancedTask');
+    }
+}
+
 /**
  * Task Repository - Mengelola penyimpanan dan pengambilan data Task
  * 

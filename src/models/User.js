@@ -112,8 +112,9 @@ class User {
     }
 }
 
-// Export untuk digunakan di file lain
-
-if(typeof module !== 'undefined'){
+// Export for use in other modules
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = User;
+} else {
     window.User = User;
-};
+}
