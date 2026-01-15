@@ -1,14 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
-  console.log('APP LOADED');
-
-  // Semua class SUDAH ada di window
-  const userController = new UserController();
-  const taskController = new TaskController();
-
-  window.userController = userController;
-  window.taskController = taskController;
-});
-
 /**
  * Day 2 Main Application - MVC Implementation
  *

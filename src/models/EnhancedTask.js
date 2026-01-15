@@ -260,6 +260,3 @@ if (typeof module !== 'undefined' && module.exports) {
 } else {
     window.EnhancedTask = EnhancedTask;
 }
-if(typeof module !== 'undefined'){
-    window.EnhancedTask = EnhancedTask;
-};
